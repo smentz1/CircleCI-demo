@@ -9,7 +9,7 @@ jobs:
       - run:
           name: Llamar a Webhook de n8n
           command: |
-            curl -X POST https://n8n.rec.beymedias.com/webhook-test/cicleci-test \
+            curl -X POST https://n8n.rec.beymedias.com/webhook/cicleci-test \
             -H "Content-Type: application/json" \
             -d '{"message": "¡Despliegue completo!", "build": "<< pipeline.number >>"}'
 
